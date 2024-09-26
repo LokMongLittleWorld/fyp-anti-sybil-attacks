@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=fyp_web3
+      - MYSQL_PORT=3306
+
+  db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=fyp_web3
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql-config:/etc/mysql/conf.d
+    ports:
+      - "3306:3306"
+
+volumes:
+  mysql_data:
