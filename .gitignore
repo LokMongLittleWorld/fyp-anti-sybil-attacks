@@ -1,6 +1,7 @@
 
 dataset/eth_polygon_transactions.csv
-
 dataset/eth_std_transactions.csv
+dataset/features_eth_polygon.csv
+dataset/features_eth_std.csv
 
 .DS_Store
