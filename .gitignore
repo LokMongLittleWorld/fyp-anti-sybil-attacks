@@ -1,4 +1,5 @@
 dataset/*.csv
+bulkDonation/getData.csv
 local_result/*
 visualization/*
 
