@@ -15,7 +15,7 @@ This project aims to detect Sybil attacks in Web3 environments by analyzing tran
 │   ├── load_data.py // load data into database
 │   ├── subfile_generator.py // generate subfile from the orginal data file for development
 │   └── test_connection.py
-├── mining
+├── data_analysis
 │   ├── list_all_functionName.py
 │   ├── list_bulk_transaction.py
 │   ├── select_bulk_transaction.py
@@ -123,7 +123,7 @@ To load data into the MySQL database:
    python load_data.py
    ```
 
-## Mining
+## Data Analysis
 
 ### Select Bulk Transaction
 

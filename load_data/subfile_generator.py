@@ -33,7 +33,7 @@ def create_subfiles(input_file_path, output_directory, original_file_name, row_c
 
 # Main function to run the script
 def main():
-    original_file_name = 'eth_std_transactions'
+    original_file_name = 'eth_polygon_transactions'
     input_file_path = f'/app/dataset/{original_file_name}.csv'
     output_directory = '/app/dataset/'
 

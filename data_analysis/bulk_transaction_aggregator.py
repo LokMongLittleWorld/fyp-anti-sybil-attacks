@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 from utils import load_csv_to_dataframe
 
 input_file_path = '/app/dataset/eth_std_transactions.csv'
-output_file_path = '/app/result/bulk_transactions.csv'
+output_file_path = '/app/local_result/bulk_transactions.csv'
 
 # Step 1: Read the CSV into a Pandas DataFrame
 df = load_csv_to_dataframe(input_file_path)
